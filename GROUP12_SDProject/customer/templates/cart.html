@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopNet Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/041ce3762b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <a href="/">
+            <img src="./assets/logo.jfif" width="60" alt="">
+        </a>
+        <div class="nav-country">
+            <img src="./assets/location_icon.png" height="20" alt="">
+            <div>
+                <p>Deliver to</p>
+                <h1>Uganda</h1>
+            </div>
+        </div>
+        <div class="nav-search">
+            <div class="nav-search-gategory">
+                <p>All</p>
+                <img src="./assets/dropdown_icon.png" height="12" alt="">
+            </div>
+            <input type="text" class="nav-search-input" placeholder="Search Shopnet">
+            <img src="./assets/search_icon.png" class="nav-search-icon" alt="">
+        </div>
+        <div class="nav-language">
+            <img src="./assets/us_flag.png" width="25px" alt="">
+            <p>EN</p>
+            <img src="./assets/dropdown_icon.png" width="8px" alt="">
+        </div>
+        <div class="nav-text">
+            <p>Hello, Sign in</p>
+            <h1>Account & Lists <img src="./assets/dropdown_icon.png" width="8px" alt=""></h1>
+        </div>
+        <div class="nav-text">
+            <p>Return</p>
+            <h1>&Orders</h1>
+        </div>
+        <a href="" class="nav-cart">
+            <img src="./assets/cart_icon.png" width="35px" alt="">
+            <h4>Cart</h4>
+        </a>
+        
+    </nav>
+<input type="checkbox" id="check">
+<label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+    <i class="fas fa-times" id="cancel"></i>
+</label>
+<div class="sidebar">
+    <header>Category</header>
+    <ul>
+        <li><a href="#"><i></i>Women's Clothes</a></li>
+        <li><a href="#"><i></i>Kids wear</a></li>
+        <li><a href="#"><i></i>Home Decor</a></li>
+        <li><a href="#"><i></i>Kitchen materials</a></li>
+        <li><a href="#"><i></i>Sports</a></li>
+        <li><a href="#"><i></i>Men Shoes</a></li>
+        <li><a href="#"><i></i>Women's Shoes</a></li>
+        <li><a href="#"><i></i>Electronics</a></li>
+        <li><a href="#"><i></i>Furniture</a></li>
+        <li><a href="#"><i></i>Accessories</a></li>
+        <li><a href="#"><i></i>Makeup</a></li>
+        <li><a href="#"><i></i>Others</a></li>
+        <li><a href="#" class="special"><i></i>Help & Settings</a></li>
+        <li><a href="#"><i></i>Your Account</a></li>
+        <li><a href="#"><i></i>Customer service</a></li>
+        <li><a href="#"><i></i>Sign in</a></li>
+    </ul>
+
+</div>
+<section></section>
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="./assets/product1-1.jpg" alt="">
+                    <div>
+                        <p>Gym outfit</p>
+                        <small>500,000</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>Shs.500,000</td>
+        </tr>
+    </table>
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>Shs.600,000</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>Shs.80,000</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>Shs.600,000</td>
+            </tr>
+        </table>
+    </div>
+    <div class="btn-checkout"><button>Checkout</button></div>
+</div>
+<footer>
+    <div class="row">
+        <div class="col">
+            <img src="./assets/logo.jfif" class="logo"  width="100" alt="">
+            <p>2020-2024, ShopNet.com, Inc. or its affiliates shop for 
+                quality nice products and we deliver at your door step</p>
+        </div>
+        <div class="col">
+            <h3>Office <div class="underline"><span></span></div></h3>
+            <p>ITPL Road</p>
+            <p>Whitefield, Bangalore</p>
+            <p>Kampala, Pin 12345, Uganda</p>
+            <p class="email-id">ShopNet@outlook.com</p>
+            <h4>+85345790124</h4>
+        </div>
+        <div class="col">
+            <h3>Links <div class="underline"><span></span></div></h3></h3>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h3>Newsletter <div class="underline"><span></span></div></h3></h3>
+            <form>
+                <i class="fa-solid fa-user"></i>
+                <input type="email" placeholder="Enter your email id" required>
+                <button type="submit"><i class="fas fa-arrow-right"></i></button>
+            </form>
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-whatsapp"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+    <div class="hr"></div>
+    <p class="copyright">ShopNet 2023 - All Right Reserved</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+        
+        

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>About ShopNet || ShopNet</title>
+
+  <title>sumit</title>
+  <style media="screen">
+    .footer{
+      position: fixed;
+    }
+  </style>
+</head>
+
+<body style="background-color: #B3E5FC;">
+  {%if request.user.is_authenticated%}
+    {% include "customer/customer_navbar.html" %}
+  {%else%}
+    {% include "customer/navbar.html" %}
+  {%endif%}
+  <br><br><br>
+<<<<<<< HEAD:SDproject/BusinessApp/templates/business/aboutus.html
+<h3 style="text-align:center; color: blue;">This site is run and owned by Myrel Evangelista, and our physical address is: Duterte Street 5, Brgy.Silanganan, Dumanggas, Iloilo City, Philippines.</h3>
+=======
+<h3 style="text-align:center;">“I don’t create companies for the sake of creating companies, but to get things done.” </h3>
+>>>>>>> 0f65e5cb491dd83391c8fef2a2ae3e0f31d7ba9d:GROUP12_SDProject/customer/templates/customer/aboutus.html
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  {% include "customer/footer.html" %}
+</body>
+
+</html>

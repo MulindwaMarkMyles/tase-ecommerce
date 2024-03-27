@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopNet</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/041ce3762b.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <style>
+        /* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles*/
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color:red;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Cards */
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.card h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Background Image*/ 
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(new2.png);
+    background-size: cover;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+    </style>
+    <nav>
+        <a href="/">
+            <img src="./assets/logo.jfif" width="60" alt="">
+        </a>
+        <div class="nav-country">
+            <img src="./assets/location_icon.png" height="20" alt="">
+            <div>
+                <p>Deliver to</p>
+                <h1>Uganda</h1>
+            </div>
+        </div>
+        <div class="nav-search">
+            <div class="nav-search-gategory">
+                <p>All</p>
+                <img src="./assets/dropdown_icon.png" height="12" alt="">
+            </div>
+            <input type="text" class="nav-search-input" placeholder="Search Shopnet">
+            <img src="./assets/search_icon.png" class="nav-search-icon" alt="">
+        </div>
+        <div class="nav-language">
+            <img src="./assets/us_flag.png" width="25px" alt="">
+            <p>EN</p>
+            <img src="./assets/dropdown_icon.png" width="8px" alt="">
+        </div>
+        <div class="nav-text">
+            <p>Hello, Sign in</p>
+            <h1>Account & Lists <img src="./assets/dropdown_icon.png" width="8px" alt=""></h1>
+        </div>
+        <div class="nav-text">
+            <p>Return</p>
+            <h1>&Orders</h1>
+        </div>
+        <a href="" class="nav-cart">
+            <img src="./assets/cart_icon.png" width="35px" alt="">
+            <h4>Cart</h4>
+        </a>
+        
+    </nav>
+
+<input type="checkbox" id="check">
+<label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+    <i class="fas fa-times" id="cancel"></i>
+</label>
+<div class="sidebar">
+    <header>Category</header>
+    <ul>
+        <li><a href="#"><i></i>Women's Clothes</a></li>
+        <li><a href="#"><i></i>Kids wear</a></li>
+        <li><a href="#"><i></i>Home Decor</a></li>
+        <li><a href="#"><i></i>Kitchen materials</a></li>
+        <li><a href="#"><i></i>Sports</a></li>
+        <li><a href="#"><i></i>Men Shoes</a></li>
+        <li><a href="#"><i></i>Women's Shoes</a></li>
+        <li><a href="#"><i></i>Electronics</a></li>
+        <li><a href="#"><i></i>Furniture</a></li>
+        <li><a href="#"><i></i>Accessories</a></li>
+        <li><a href="#"><i></i>Makeup</a></li>
+        <li><a href="#"><i></i>Others</a></li>
+        <li><a href="#" class="special"><i></i>Help & Settings</a></li>
+        <li><a href="#"><i></i>Your Account</a></li>
+        <li><a href="#"><i></i>Customer service</a></li>
+        <li><a href="#"><i></i>Sign in</a></li>
+    </ul>
+
+</div>
+<section></section>
+<div class="header-slider">
+    <a href="#" class="control_prev">&#8592</a> 
+    <a href="#" class="control_next">&#8594</a>
+    <ul>
+        <img src="./assets/header4.jpg" class="header-img" alt="">
+        <img src="./assets/header3.jpg" class="header-img" alt="">
+        <img src="./assets/header5.jpg" class="header-img" alt="">
+        <img src="./assets/header6.jpg" class="header-img" alt="">
+    </ul>
+</div>
+<div class="box-row header-box">
+    <div class="box-col">
+        <h3>Free internatinal returns</h3>
+        <img src="./assets/box1-1.jpg" alt="">
+        <a href="/">Shop More</a>
+    </div>
+    <div class="box-col">
+        <h3>New Year</h3>
+        <img src="./assets/box1-2.jpg" alt="">
+        <a href="/">Shop More</a>
+    </div>
+    <div class="box-col">
+        <h3>Toys</h3>
+        <img src="./assets/box1-3.jpg" alt="">
+        <a href="/">Shop More</a>
+    </div>
+    <div class="box-col">
+        <h3>Deals in Tech</h3>
+        <img src="./assets/box1-4.jpg" alt="">
+        <a href="/">Shop More</a>
+    </div>
+</div>
+<div class="box-row">
+    <div class="box-col">
+        <h3>Grooming Products</h3>
+        <img src="./assets/box2-1.jpg" alt="">
+        <a href="/">Shop More</a>
+    </div>
+    <div class="box-col">
+        <h3>Latest Devices</h3>
+        <img src="./assets/box2-2.jpg" alt="">
+        <a href="/">Shop More</a>
+    </div>
+    <div class="box-col">
+        <h3>Pets Food</h3>
+        <img src="./assets/box2-3.jpg" alt="">
+        <a href="/">Shop More</a>
+    </div>
+    <div class="box-col">
+        <h3>Fashion Mart</h3>
+        <img src="./assets/box2-4.jpg" alt="">
+        <a href="/">Shop More</a>
+    </div>
+</div>
+
+<div class="product-slider">
+    <h2>Best Sellers in Sports & Outdoors</h2>
+    <div class="products">
+       <div><img src="./assets/product1-1.jpg" alt="">
+        <h2>name</h2>
+        <div class="text">
+            <p>Shs.200,000</p>
+            <img src="./assets/cart_icon.png">
+        </div></div> 
+       <div><img src="./assets/product1-2.jpg" alt="">
+        <h2>name</h2>
+        <div class="text">
+            <p>Shs.230,000</p>
+            <img src="./assets/cart_icon.png">
+        </div></div> 
+       <div><img src="./assets/product1-3.jpg" alt="">
+        <h2>name</h2>
+        <div class="text">
+            <p>Shs.500,000</p>
+            <img src="./assets/cart_icon.png">
+        </div></div> 
+       <div><img src="./assets/product1-4.jpg" alt="">
+        <h2>name</h2>
+        <div class="text">
+            <p>Shs.410,000</p>
+            <img src="./assets/cart_icon.png">
+        </div></div> 
+       <div><img src="./assets/product1-5.jpg" alt="">
+        <h2>name</h2>
+        <div class="text">
+            <p>Shs.600,000</p>
+            <img src="./assets/cart_icon.png">
+        </div></div> 
+       <div><img src="./assets/product1-6.jpg" alt="">
+        <h2>name</h2>
+        <div class="text">
+            <p>Shs.150,000</p>
+            <img src="./assets/cart_icon.png">
+        </div></div> 
+       <div><img src="./assets/product1-7.jpg" alt="">
+        <h2>name</h2>
+        <div class="text">
+            <p>Shs.20,000</p>
+            <img src="./assets/cart_icon.png">
+        </div></div> 
+       <div><img src="./assets/product1-8.jpg" alt="">
+        <h2>name</h2>
+        <div class="text">
+            <p>Shs.3,000,000</p>
+            <img src="./assets/cart_icon.png">
+        </div></div> 
+       <div><img src="./assets/product1-9.jpg" alt="">
+        <h2>name</h2>
+        <div class="text">
+            <p>Shs.700,000</p>
+            <img src="./assets/cart_icon.png">
+        </div></div> 
+       <div><img src="./assets/product1-10.jpg" alt="">
+        <h2>name</h2>
+        <div class="text">
+            <p>Shs.109,000</p>
+            <img src="./assets/cart_icon.png">
+        </div></div> 
+    </div>
+</div>
+<div class="box-row">
+    <div class="box-col">
+        <h3>Stationery</h3>
+        <img src="./assets/box3-1.jpg" alt="">
+        <a href="/">Shop More</a>
+    </div>
+    <div class="box-col">
+        <h3>Laptops</h3>
+        <img src="./assets/box3-2.jpg" alt="">
+        <a href="/">Shop More</a>
+    </div>
+    <div class="box-col">
+        <h3>Office Chairs</h3>
+        <img src="./assets/box3-3.jpg" alt="">
+        <a href="/">Shop More</a>
+    </div>
+    <div class="box-col">
+        <h3>Gaming Monitors</h3>
+        <img src="./assets/box3-4.jpg" alt="">
+        <a href="/">Shop More</a>
+    </div>
+</div>
+<div class="products-slider-with-price">
+    <h2>Discounts</h2>
+    <div class="products">
+        <div class="product-card">
+            <div class="product-img-container">
+                <img src="./assets/product2-1.jpg" alt="">
+            </div>
+            <div class="product-offer">
+                <p>-27% </p> <span>Deal</span>
+            </div>
+            <p class="product-price"><span>14.49$</span></p>
+        </div>
+        <div class="product-card">
+            <div class="product-img-container">
+                <img src="./assets/product2-2.jpg" alt="">
+            </div>
+            <div class="product-offer">
+                <p>-27% </p> <span>Deal</span>
+            </div>
+            <p class="product-price"><span>14.49$</span></p>
+        </div>
+        <div class="product-card">
+            <div class="product-img-container">
+                <img src="./assets/product2-3.jpg" alt="">
+            </div>
+            <div class="product-offer">
+                <p>-27% </p> <span>Deal</span>
+            </div>
+            <p class="product-price"><span>14.49$</span></p>
+        </div>
+        <div class="product-card">
+            <div class="product-img-container">
+                <img src="./assets/product2-4.jpg" alt="">
+            </div>
+            <div class="product-offer">
+                <p>-27% </p> <span>Deal</span>
+            </div>
+            <p class="product-price"><span>14.49$</span></p>
+        </div>
+        <div class="product-card">
+            <div class="product-img-container">
+                <img src="./assets/product2-5.jpg" alt="">
+            </div>
+            <div class="product-offer">
+                <p>-27% </p> <span>Deal</span>
+            </div>
+            <p class="product-price"><span>14.49$</span></p>
+        </div>
+        <div class="product-card">
+            <div class="product-img-container">
+                <img src="./assets/product2-6.jpg" alt="">
+            </div>
+            <div class="product-offer">
+                <p>-27% </p> <span>Deal</span>
+            </div>
+            <p class="product-price"><span>14.49$</span></p>
+        </div>
+        <div class="product-card">
+            <div class="product-img-container">
+                <img src="./assets/product2-7.jpg" alt="">
+            </div>
+            <div class="product-offer">
+                <p>-27% </p> <span>Deal</span>
+            </div>
+            <p class="product-price"><span>14.49$</span></p>
+        </div>
+        <div class="product-card">
+            <div class="product-img-container">
+                <img src="./assets/product2-8.jpg" alt="">
+            </div>
+            <div class="product-offer">
+                <p>-27% </p> <span>Deal</span>
+            </div>
+            <p class="product-price"><span>14.49$</span></p>
+        </div>
+        <div class="product-card">
+            <div class="product-img-container">
+                <img src="./assets/product2-9.jpg" alt="">
+            </div>
+            <div class="product-offer">
+                <p>-27% </p> <span>Deal</span>
+            </div>
+            <p class="product-price"><span>14.49$</span></p>
+            <h4></h4>
+        </div>
+        <div class="product-card">
+            <div class="product-img-container">
+                <img src="./assets/product2-10.jpg" alt="">
+            </div>
+            <div class="product-offer">
+                <p>-27% </p> <span>Deal</span>
+            </div>
+            <p class="product-price"><span>14.49$</span></p>
+            <h4></h4>
+        </div>
+        <div class="product-card">
+            <div class="product-img-container">
+                <img src="./assets/product2-12.jpg" alt="">
+            </div>
+            <div class="product-offer">
+                <p>-27% </p> <span>Deal</span>
+            </div>
+            <p class="product-price"><span>14.49$</span></p>
+            <h4></h4>
+        </div>
+    </div>
+</div>
+<div class="product-slider">
+    <h2>Best Sellers in Gadgets</h2>
+    <div class="products">
+        <div><img src="./assets/product3-1.jpg" alt="">
+            <h2>name</h2>
+            <div class="text">
+                <p>Shs.200,000</p>
+                <img src="./assets/cart_icon.png">
+            </div></div> 
+        <div><img src="./assets/product3-11.jpg" alt="">
+            <h2>name</h2>
+            <div class="text">
+                <p>Shs.230,000</p>
+                <img src="./assets/cart_icon.png">
+            </div></div> 
+        <div><img src="./assets/product3-3.jpg" alt="">
+            <h2>name</h2>
+            <div class="text">
+                <p>Shs.500,000</p>
+                <img src="./assets/cart_icon.png">
+            </div></div> 
+        <div><img src="./assets/product3-4.jpg" alt="">
+            <h2>name</h2>
+            <div class="text">
+                <p>Shs.410,000</p>
+                <img src="./assets/cart_icon.png">
+            </div></div> 
+        <div><img src="./assets/product3-5.jpg" alt="">
+            <h2>name</h2>
+            <div class="text">
+                <p>Shs.600,000</p>
+                <img src="./assets/cart_icon.png">
+            </div></div> 
+        <div><img src="./assets/product3-6.jpg" alt="">
+            <h2>name</h2>
+            <div class="text">
+                <p>Shs.150,000</p>
+                <img src="./assets/cart_icon.png">
+            </div></div> 
+        <div><img src="./assets/product3-7.jpg" alt="">
+            <h2>name</h2>
+            <div class="text">
+                <p>Shs.2,000,000</p>
+                <img src="./assets/cart_icon.png">
+            </div></div> 
+        <div><img src="./assets/product3-8.jpg" alt="">
+            <h2>name</h2>
+            <div class="text">
+                <p>Shs.3,000,000</p>
+                <img src="./assets/cart_icon.png">
+            </div></div> 
+        <div><img src="./assets/product3-9.jpg" alt="">
+            <h2>name</h2>
+            <div class="text">
+                <p>Shs.700,000</p>
+                <img src="./assets/cart_icon.png">
+            </div></div> 
+        <div><img src="./assets/product3-10.jpg" alt="">
+            <h2>name</h2>
+            <div class="text">
+                <p>Shs.109,000</p>
+                <img src="./assets/cart_icon.png">
+            </div></div> 
+        
+    </div>
+</div>
+
+<div class="box-row">
+    <div class="box-col">
+        <h3>Food</h3>
+        <img src="./assets/box4-1.jpg" alt="">
+        <a href="/">Shop More</a>
+    </div>
+    <div class="box-col">
+        <h3>Home Decor</h3>
+        <img src="./assets/box4-2.jpg" alt="">
+        <a href="/">Shop More</a>
+    </div>
+    <div class="box-col">
+        <h3>Skincare</h3>
+        <img src="./assets/box4-3.jpg" alt="">
+        <a href="/">Shop More</a>
+    </div>
+    <div class="box-col">
+        <h3>Tech Products</h3>
+        <img src="./assets/box4-4.jpg" alt="">
+        <a href="/">Shop More</a>
+    </div>
+</div>
+
+<footer>
+    <div class="row">
+        <div class="col">
+            <img src="./assets/logo.jfif" class="logo"  width="100" alt="">
+            <p>2020-2024, ShopNet.com, Inc. or its affiliates shop for 
+                quality nice products and we deliver at your door step</p>
+        </div>
+        <div class="col">
+            <h3>Office <div class="underline"><span></span></div></h3>
+            <p>ITPL Road</p>
+            <p>Whitefield, Bangalore</p>
+            <p>Kampala, Pin 12345, Uganda</p>
+            <p class="email-id">ShopNet@outlook.com</p>
+            <h4>+85345790124</h4>
+        </div>
+        <div class="col">
+            <h3>Links <div class="underline"><span></span></div></h3></h3>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h3>Newsletter <div class="underline"><span></span></div></h3></h3>
+            <form>
+                <i class="fa-solid fa-user"></i>
+                <input type="email" placeholder="Enter your email id" required>
+                <button type="submit"><i class="fas fa-arrow-right"></i></button>
+            </form>
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-whatsapp"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+    <div class="hr"></div>
+    <p class="copyright">ShopNet 2023 - All Right Reserved</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
