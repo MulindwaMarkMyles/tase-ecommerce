@@ -1,4 +1,4 @@
-{% load {% static "" %} %}
+{% load static %}
 <!DOCTYPE html>
 <html>
 
@@ -6,8 +6,8 @@
 
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="{% static '' %}">
-
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <script src="https://kit.fontawesome.com/041ce3762b.js" crossorigin="anonymous"></script>
 
   <style>
     /*---------------------------------------
@@ -63,10 +63,10 @@
   </style>
 </head>
 
-<footer></footer>
+<footer>
     <div class="row">
         <div class="col">
-            <img src="./assets/logo.jfif" class="logo"  width="100" alt="">
+            <img src="{% static 'assets/logo.jfif' %}" class="logo"  width="100" alt="">
             <p>2024, ShopNet.com, Inc. </p>
         </div>
         <div class="col">
@@ -103,7 +103,7 @@
         </div>
     </div>
     <div class="hr"></div>
-    <p class="copyright">ShopNet 2023 - All Right Reserved</p>
+    <p class="copyright">ShopNet 2024 - All Right Reserved</p>
   <br>
 </footer>
 
