@@ -88,7 +88,7 @@ def add_to_cart_view(request,pk):
     else:
         product_count_in_cart=1
 
-    response = render(request, 'customer/index.html',{'products':products,'product_count_in_cart':product_count_in_cart})
+    response = render(request, 'customer/customer_home.html',{'products':products,'product_count_in_cart':product_count_in_cart})
 
     #adding product id to cookies
     if 'product_ids' in request.COOKIES:

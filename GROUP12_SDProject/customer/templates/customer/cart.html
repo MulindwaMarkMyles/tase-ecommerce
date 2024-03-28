@@ -1,4 +1,4 @@
-{% extends 'customer/homebase.html' %}
+{% extends 'customer/customer_base.html' %}
 {% load static %}
 {% block content %}
 
@@ -11,11 +11,11 @@
   .button {
   display: inline-block;
   border-radius: 4px;
-  background-color: #f4511e;
+  background-color: #b10404;
   border: none;
   color: #FFFFFF;
   text-align: center;
-  font-size: 28px;
+  font-size: 15px;
   padding: 20px;
   width: 200px;
   transition: all 0.5s;
@@ -51,11 +51,11 @@
 .button2 {
   background-color: white;
   color: black;
-  border: 2px solid #008CBA;
+  border: 2px solid #ba0000;
 }
 
 .button2:hover {
-  background-color: #008CBA;
+  background-color: #ba0000;
   color: white;
 }
 
@@ -65,12 +65,12 @@
 
 <br><br><br><br>
 
-<div class="container">
-  <div class="panel panel-primary">
-    <div class="panel-heading">
-      <h6 style="text-align:center;" class="panel-title">My Cart</h6>
+<div class="container" >
+  <div class="panel panel-primary" style="border-color:#b10404 ;">
+    <div class="panel-heading" style="background-color: #b10404; border-color: #ba0000;">
+      <h6 class="panel-title" style="text-align:center;">My Cart</h6>
     </div>
-    <table class="table table-hover" id="dev-table">
+    <table class="table table-hover" id="dev-table" >
       <thead>
         <tr>
           <th>Name</th>
@@ -103,8 +103,8 @@
 </div>
 <br><br><br>
 <div style="text-align: center;">
-  <button class="button button2">Total {{total}}</button>
-  <a href="/customer-address"><button class="button" ><span>Purchase </span></button></a>
+  <button class="button button2">Total: shs. {{total}}</button>
+  <a href="/customer-address"><button class="button" ><span>Proceed to checkout </span></button></a>
 </div>
 
 
