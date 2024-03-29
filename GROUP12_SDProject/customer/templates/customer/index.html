@@ -286,10 +286,8 @@ body {
 
 /* Create three equal columns that floats next to each other */
 .column {
-  float: left;
-  width: 33.33%;
+  width: 33%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
 }
 
 /* Clear floats after the columns */
@@ -297,6 +295,13 @@ body {
   content: "";
   display: table;
   clear: both;
+}
+/* container for products */
+.products {
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  overflow-x: hidden;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
@@ -311,8 +316,9 @@ body {
 <h3 style="text-align:center; color:yellow;">{{word}}</h3>
 <br>
 <!-- products data start -->
-  <div class="row">
+  <div class="products">
 
+      {% for i in "2477724242" %} <!-- remove this to cancel the repeated products -->
       {% for p in products %}
       <!-- card1 -->
       <div class="column">
@@ -349,14 +355,8 @@ body {
       </div>
       </div>
 <!-- card1 end -->
-{% if forloop.counter|divisibleby:"3" %}
-    </div>
-
-    <div class="row">
-
-          <br><br><br><br><br>
-{% endif %}
   {% endfor %}
+  {% endfor %} <!-- remove this to cancel the repeated products -->
 </div>
 <!-- products data end -->
 {%else%}
