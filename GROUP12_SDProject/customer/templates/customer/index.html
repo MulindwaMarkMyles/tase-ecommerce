@@ -7,6 +7,9 @@
 html {
   height: 100%;
 }
+body {
+  overflow-x:hidden ;
+}
 
 .d-flex {
   display: -webkit-box;
@@ -304,17 +307,45 @@ body {
   overflow-x: hidden;
 }
 
+.categories {
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #000 #6060637C;
+  padding:10px 0;
+}
+.categories a {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color:#fff;
+  background-color: #000;
+  text-decoration: none;
+}
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
   }
 }
-  </style>
+</style>
+
+<!-- Categories code -->
+{% if categories %}
+<div class="categories">
+{% for i in "23424234242423" %} <!-- this line is just for many categories and you can remove it... -->
+{% for category in categories %}
+    <a href="#" >{{ category.name }}</a>
+{% endfor %}
+{% endfor %} <!-- this line too is just for many categories and you can remove it... -->
+</div>
+
+{% endif %}
+
 
 {%if products%}
-<h3 style="text-align:center; color:yellow;">{{word}}</h3>
-<br>
 <!-- products data start -->
   <div class="products">
 

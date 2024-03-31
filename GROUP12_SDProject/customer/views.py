@@ -9,6 +9,7 @@ from django.conf import settings
 from business.views import is_business
 
 def home_view(request):
+    categories = models.Category.objects.all()
     products=models.Product.objects.all()
     if 'product_ids' in request.COOKIES:
         product_ids = request.COOKIES['product_ids']
@@ -18,7 +19,7 @@ def home_view(request):
         product_count_in_cart=0
     if request.user.is_authenticated:
         return HttpResponseRedirect('afterlogin')
-    return render(request,'customer/index.html',{'products':products,'product_count_in_cart':product_count_in_cart})
+    return render(request,'customer/index.html',{'products':products,'product_count_in_cart':product_count_in_cart, 'categories':categories})
 
 def product_detail(request,pk):
     product=get_object_or_404(models.Product, pk=pk)
